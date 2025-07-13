@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ching Luen</title>
+</head>
+
+<body>
+    <img src="./Qconnecnt.png" alt="">
+    <h1 class="h1-degsin">青联互联</h1>
+    <h2>Ching Luen</h2>
+    <button class="button" color="#67EACA">加群QQ</button>
+</body>
+<script>
+    let el = document.getElementsByClassName("button")[0]
+    el.addEventListener("click",()=>{
+        window.open("https://qm.qq.com/cgi-bin/qm/qr?k=aXVWbZr3Ki_ZUgfO_M3Wy3jbDvd6Qc0D&jump_from=webapi&authKey=fLlaYFEN1Q881qtboLXRVT8leXyIS291HxuRJQ7i9zlHLMwW1JR98HVPNO1JhEey","_blank")
+    })
+</script>
+<!--  -->
+<style>
+    body {
+        text-align: center;
+        color: #f8f8f8;
+    }
+    .h1-degsin {
+        transition: cubic-bezier(0.075, 0.82, 0.165, 1) 2s;
+        animation: myfirst 1s;
+        margin-left: 40px;
+        margin-top: 0;
+        font-size: 48px;
+        background: linear-gradient(44deg, #13D4D0 0%, #67EBCA 100%);
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+    .h1-degsin:hover {
+        transform: translateX(-40px);
+    }
+    h2 {
+        color: #67EBCA;
+    }
+    @keyframes myfirst {
+        from {
+            transform: translateX(-40px);
+        }
+
+        to {
+            transform: translateX(0px);
+        }
+    }
+    .button {
+        transition: cubic-bezier(0.075, 0.82, 0.165, 1) 2s;
+        width: 250px;
+        background-color: #67EACA;
+        border: none;
+        color: white;
+        border-radius: 200px;
+        font-size: 32px;
+        margin-left: 20px;
+
+        &:hover {
+            transform: translateX(-10px);
+            background-color: #0674af;
+        }
+
+        &:focus-visible {
+            outline: 0;
+        }
+    }
+</style>
+
+</html>
